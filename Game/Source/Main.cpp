@@ -33,11 +33,14 @@ int main(int argc, char* argv[]) {
 		RENDERER.BeginFrame();
 
 		game->Draw(RENDERER);
+		PS.Draw(RENDERER);
 
 		text->Draw(g_engine.GetRenderer(), 40, 40);
 
 		RENDERER.EndFrame();
 	}
+
+	g_engine.Shutdown();
 
 	return 0;
 }

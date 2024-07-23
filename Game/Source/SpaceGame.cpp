@@ -46,10 +46,10 @@ void SpaceGame::Update(float dt) {
         {
             Transform transform{ {400,300}, 0, 3 };
             Model* model = new Model{ GameData::playerPoints, Color{1, 1, 1} };
-            Player* player = new Player(800, transform, model);
+            auto player = std::make_unique<Player>(800.0f, transform, model);
             player->SetDamping(2.5f);
             player->SetTag("Player");
-            m_scene->AddActor(player);
+            m_scene->AddActor(std::move(player));
         }
 
         m_spawnTime = 3;
@@ -65,16 +65,16 @@ void SpaceGame::Update(float dt) {
 
             //create enemy
             auto* enemyModel = new Model{ GameData::enemyPoints, Color{1, 0, 0} };
-            auto* enemy = new Enemy(400, { {random(RENDERER.GetWidth()), random(RENDERER.GetHeight())}, 0, 2 }, enemyModel);
+            auto enemy = std::make_unique<Enemy>(400.0f, Transform{ Vector2{random(RENDERER.GetWidth()), random(RENDERER.GetHeight())}, 0, 2 }, enemyModel);
             enemy->SetDamping(1.0f);
             enemy->SetTag("Enemy");
-            m_scene->AddActor(enemy);
+            m_scene->AddActor(std::move(enemy));
 
             // create pickup
             auto* pickupModel = new Model{ GameData::pickupPoints, Color{1, 0, 1} };
-            auto* pickup = new Pickup({ {random(RENDERER.GetWidth()), random(RENDERER.GetHeight())}, 0, 2 }, pickupModel);
+            auto pickup = std::make_unique<Pickup>(Transform{ Vector2{random(RENDERER.GetWidth()), random(RENDERER.GetHeight())}, 0, 2 }, pickupModel);
             pickup->SetTag("Pickup");
-            m_scene->AddActor(pickup);
+            m_scene->AddActor(std::move(pickup));
         }
         break;
     case State::PlayerDead:

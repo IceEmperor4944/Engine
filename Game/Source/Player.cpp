@@ -50,10 +50,10 @@ void Player::Update(float dt) {
 		m_scene->AddActor(bullet2);*/
 
 		Transform transform{ m_transform.position, angle, 1.0f };
-		Bullet* bullet = new Bullet(800, transform, model);
+		auto bullet = std::make_unique<Bullet>(800, transform, model);
 		bullet->SetLifespan(1.0f);
 		bullet->SetTag("Bullet");
-		m_scene->AddActor(bullet);
+		m_scene->AddActor(std::move(bullet));
 	}
 
 	Actor::Update(dt);
