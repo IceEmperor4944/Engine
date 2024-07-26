@@ -12,8 +12,11 @@ public:
 	virtual void OnCollision(Actor* actor);
 
 	void SetFireModifier(float modifier) { m_fireModifier *= modifier; }
+	void AddShot() { m_shotCount++; }
 private:
 	float m_speed = 0;
 	float m_fireTimer = 0;
 	float m_fireModifier = 1;
+
+	int m_shotCount = 1;
 };

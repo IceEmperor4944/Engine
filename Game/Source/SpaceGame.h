@@ -29,9 +29,11 @@ private:
 	float m_spawnTime{ 0 };
 	float m_stateTimer{ 0 };
 
+	int m_pickupCount{ 10 };
+
 	Font* m_font{ nullptr };
-	Text* m_textScore{ nullptr };
-	Text* m_textLives{ nullptr };
+	Text* m_textLevel{ nullptr };
+	Text* m_textBombs{ nullptr };
 
 	Font* m_fontLarge{ nullptr };
 	Text* m_textTitle{ nullptr };

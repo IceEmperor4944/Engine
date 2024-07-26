@@ -1,12 +1,8 @@
 ﻿  Bullet.cpp
   Enemy.cpp
+C:\Users\nsears\source\repos\CSC196-GameEngine\Game\Source\Enemy.cpp(28,55): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Main.cpp
   Player.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\memory(3595,56): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\memory(3595,56): warning C4244:         with
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\memory(3595,56): warning C4244:         [
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\memory(3595,56): warning C4244:             _Ty=int
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.40.33807\include\memory(3595,56): warning C4244:         ]
   SpaceGame.cpp
   Generating Code...
   Game.vcxproj -> C:\Users\nsears\source\repos\CSC196-GameEngine\x64\Debug\Game.exe

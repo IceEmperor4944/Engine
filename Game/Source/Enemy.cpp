@@ -17,13 +17,15 @@ void Enemy::Update(float dt) {
 
 void Enemy::OnCollision(Actor* actor) {
 	if (actor->GetTag() == "Player" || actor->GetTag() == "Bullet") {
-		m_scene->GetGame()->AddPoints(100);
+		m_scene->GetGame()->AddLevel();
 		m_destroyed = true;
+
+		AUDIO.PlaySound("explosion.wav");
 
 		for (int i = 0; i < 100; i++) {
 			Particle::Data data{
 				m_transform.position,
-				Vector2{1,0}.Rotate(randomf(Math::TwoPi)) * 150,
+				Vector2{1,0}.Rotate(randomf(Math::TwoPi)) * 150 * i,
 				randomf(1.5f, 3.0f),
 				0, 255, 0, 255
 			};

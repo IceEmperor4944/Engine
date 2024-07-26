@@ -1,5 +1,4 @@
-﻿  Engine.cpp
-  Particle.cpp
-  ParticleSystem.cpp
+﻿  Audio.cpp
+  Engine.cpp
   Generating Code...
   Engine.vcxproj -> C:\Users\nsears\source\repos\CSC196-GameEngine\x64\Debug\Engine.lib

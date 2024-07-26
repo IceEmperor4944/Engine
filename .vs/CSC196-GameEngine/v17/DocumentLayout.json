@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58431CAD-B965-4D2D-AEAE-E2CF97313585}|Game\\Game.vcxproj|C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Game\\Source\\SpaceGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58431CAD-B965-4D2D-AEAE-E2CF97313585}|Game\\Game.vcxproj|solutionrelative:Game\\Source\\SpaceGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Engine\\Source\\Audio.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Source\\Audio.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Engine\\Source\\Audio.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{539DFA82-6555-4142-972A-5936FD488739}|Engine\\Engine.vcxproj|solutionrelative:Engine\\Source\\Audio.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58431CAD-B965-4D2D-AEAE-E2CF97313585}|Game\\Game.vcxproj|C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Game\\Source\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{58431CAD-B965-4D2D-AEAE-E2CF97313585}|Game\\Game.vcxproj|solutionrelative:Game\\Source\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpaceGame.cpp",
+              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Game\\Source\\SpaceGame.cpp",
+              "RelativeDocumentMoniker": "Game\\Source\\SpaceGame.cpp",
+              "ToolTip": "C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Game\\Source\\SpaceGame.cpp",
+              "RelativeToolTip": "Game\\Source\\SpaceGame.cpp",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAC0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-26T09:07:31.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Audio.cpp",
+              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Engine\\Source\\Audio.cpp",
+              "RelativeDocumentMoniker": "Engine\\Source\\Audio.cpp",
+              "ToolTip": "C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Engine\\Source\\Audio.cpp",
+              "RelativeToolTip": "Engine\\Source\\Audio.cpp",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-26T09:05:24.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Audio.h",
+              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Engine\\Source\\Audio.h",
+              "RelativeDocumentMoniker": "Engine\\Source\\Audio.h",
+              "ToolTip": "C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Engine\\Source\\Audio.h",
+              "RelativeToolTip": "Engine\\Source\\Audio.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-26T09:05:20.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Game\\Source\\Main.cpp",
+              "RelativeDocumentMoniker": "Game\\Source\\Main.cpp",
+              "ToolTip": "C:\\Users\\nsears\\source\\repos\\CSC196-GameEngine\\Game\\Source\\Main.cpp",
+              "RelativeToolTip": "Game\\Source\\Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-26T09:07:20.16Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

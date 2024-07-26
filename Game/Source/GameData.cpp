@@ -84,4 +84,14 @@ namespace GameData {
 		{ 0, -5 },
 		{ 5, 0 }
 	};
+
+	const std::vector<Vector2> bigBulletPoints{
+		{ 0, 5},
+		{ 5, 0 },
+		{ 0, -5 },
+		{ 0, 5 },
+		{ -5, 0 },
+		{ 0, -5 },
+		{ 0, 5 }
+	};
 }

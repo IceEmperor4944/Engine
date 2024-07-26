@@ -28,14 +28,17 @@ void Player::Update(float dt) {
 	//fire
 	m_fireTimer -= dt;
 	if (INPUT.GetMouseButtonDown(0) && m_fireTimer <= 0 /*&& !INPUT.GetPrevKeyDown(SDL_SCANCODE_SPACE)*/) {
-		m_fireTimer = 0.2f * m_fireModifier;
+		for (int i = 0; i < m_shotCount; i++) {
+			AUDIO.PlaySound("beep.wav");
 
-		//shoot at mouse pos
-		Vector2 direction = INPUT.GetMousePosition() - m_transform.position;
-		float angle = direction.Angle();
+			m_fireTimer = 0.5f * m_fireModifier;
 
-		Model* model = new Model{ GameData::bulletPoints, Color{ 1, 1, 0 } };
-		/*Vector2 v1{ m_transform.position.x + (16 * m_transform.scale), m_transform.position.y + (16 * m_transform.scale) };
+			//shoot at mouse pos
+			Vector2 direction = INPUT.GetMousePosition() - m_transform.position;
+			float angle = direction.Angle() + Math::DegToRad(360 / m_shotCount * (float)i);
+
+			Model* model = new Model{ GameData::bulletPoints, Color{ 1, 1, 0 } };
+			/*Vector2 v1{ m_transform.position.x + (16 * m_transform.scale), m_transform.position.y + (16 * m_transform.scale) };
 		Vector2 v2{ m_transform.position.x + (16 * m_transform.scale), m_transform.position.y - (16 * m_transform.scale) };
 		Transform transform1{ v1.Rotate(m_transform.rotation), m_transform.rotation, 1.0f };
 		Transform transform2{ v2.Rotate(m_transform.rotation), m_transform.rotation, 1.0f };
@@ -49,11 +52,28 @@ void Player::Update(float dt) {
 		m_scene->AddActor(bullet1);
 		m_scene->AddActor(bullet2);*/
 
+			Transform transform{ m_transform.position, angle, 1.0f };
+			auto bullet = std::make_unique<Bullet>(800.0f, transform, model, false);
+			bullet->SetLifespan(1.0f);
+			bullet->SetTag("Bullet");
+			m_scene->AddActor(std::move(bullet));
+		}
+	}
+
+	if (INPUT.GetMouseButtonDown(2) && m_fireTimer <= 0 && !INPUT.GetPrevMouseButtonDown(2) && m_scene->GetGame()->GetBombs() > 0) {
+		m_fireTimer = 1.5f * m_fireModifier;
+
+		//shoot at mouse pos
+		Vector2 direction = INPUT.GetMousePosition() - m_transform.position;
+		float angle = direction.Angle();
+
+		Model* model = new Model{ GameData::bigBulletPoints, Color{ 0, 1, 1 } };
+		
 		Transform transform{ m_transform.position, angle, 1.0f };
-		auto bullet = std::make_unique<Bullet>(800, transform, model);
-		bullet->SetLifespan(1.0f);
-		bullet->SetTag("Bullet");
-		m_scene->AddActor(std::move(bullet));
+		auto bigBullet = std::make_unique<Bullet>(800.0f, transform, model, true);
+		bigBullet->SetLifespan(1.0f);
+		bigBullet->SetTag("Bullet");
+		m_scene->AddActor(std::move(bigBullet));
 	}
 
 	Actor::Update(dt);
