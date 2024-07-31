@@ -29,7 +29,7 @@ public:
 	Engine() = default;
 	~Engine() = default;
 
-	bool Initilize();
+	bool Initialize();
 	void Shutdown();
 
 	void Update();

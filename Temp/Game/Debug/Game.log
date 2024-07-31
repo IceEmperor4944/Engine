@@ -1,0 +1,14 @@
+﻿  Bullet.cpp
+  Enemy.cpp
+  GameData.cpp
+  Main.cpp
+  Pickup.cpp
+  Player.cpp
+  SpaceGame.cpp
+  Generating Code...
+SpaceGame.obj : error LNK2001: unresolved external symbol "class Engine g_engine" (?g_engine@@3VEngine@@A)
+Bullet.obj : error LNK2001: unresolved external symbol "class Engine g_engine" (?g_engine@@3VEngine@@A)
+Enemy.obj : error LNK2001: unresolved external symbol "class Engine g_engine" (?g_engine@@3VEngine@@A)
+Main.obj : error LNK2001: unresolved external symbol "class Engine g_engine" (?g_engine@@3VEngine@@A)
+Player.obj : error LNK2001: unresolved external symbol "class Engine g_engine" (?g_engine@@3VEngine@@A)
+C:\Users\nsears\source\repos\CSC196-GameEngine\Bin\Game\Debug\Game.exe : fatal error LNK1120: 1 unresolved externals

@@ -2,7 +2,7 @@
 
 Engine g_engine;
 
-bool Engine::Initilize() {
+bool Engine::Initialize() {
     m_renderer = std::make_unique<Renderer>();
     m_input = std::make_unique<Input>();
     m_audio = std::make_unique<Audio>();

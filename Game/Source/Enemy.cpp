@@ -25,7 +25,7 @@ void Enemy::OnCollision(Actor* actor) {
 		for (int i = 0; i < 100; i++) {
 			Particle::Data data{
 				m_transform.position,
-				Vector2{1,0}.Rotate(randomf(Math::TwoPi)) * 150 * i,
+				Vector2{1,0}.Rotate(randomf(Math::TwoPi)) * 150.0f * (float)i,
 				randomf(1.5f, 3.0f),
 				0, 255, 0, 255
 			};

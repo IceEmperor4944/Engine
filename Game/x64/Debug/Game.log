@@ -1,8 +1,11 @@
-﻿  Bullet.cpp
-  Enemy.cpp
-C:\Users\nsears\source\repos\CSC196-GameEngine\Game\Source\Enemy.cpp(28,55): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+﻿  Enemy.cpp
   Main.cpp
   Player.cpp
   SpaceGame.cpp
   Generating Code...
-  Game.vcxproj -> C:\Users\nsears\source\repos\CSC196-GameEngine\x64\Debug\Game.exe
+SpaceGame.obj : error LNK2001: unresolved external symbol "class Engine g_engine" (?g_engine@@3VEngine@@A)
+Bullet.obj : error LNK2001: unresolved external symbol "class Engine g_engine" (?g_engine@@3VEngine@@A)
+Enemy.obj : error LNK2001: unresolved external symbol "class Engine g_engine" (?g_engine@@3VEngine@@A)
+Main.obj : error LNK2001: unresolved external symbol "class Engine g_engine" (?g_engine@@3VEngine@@A)
+Player.obj : error LNK2001: unresolved external symbol "class Engine g_engine" (?g_engine@@3VEngine@@A)
+C:\Users\nsears\source\repos\CSC196-GameEngine\x64\Debug\Game.exe : fatal error LNK1120: 1 unresolved externals

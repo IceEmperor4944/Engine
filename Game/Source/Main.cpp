@@ -12,7 +12,7 @@
 #include <vector>
 
 int main(int argc, char* argv[]) {
-	g_engine.Initilize();
+	g_engine.Initialize();
 
 	SpaceGame* game = new SpaceGame(&g_engine);
 	game->Initialize();
